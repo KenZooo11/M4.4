@@ -1,5 +1,6 @@
 import logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
+
 operator = int(input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie: "))
 a = float(input("Wprowadź pierwszą liczbę: "))
 b = float(input("Wprowadź drugą liczbę: "))    
@@ -16,5 +17,6 @@ elif operator == 3:
 elif operator == 4:
     logging.info(f"Dzielę {a} i {b}")
     if b == 0:
-        logging.error("Nie można dzielić przez zero!")
-    print(f"Wynik wynosi ", a / b)
+        logging.error("NIE MOŻNA DZIELIĆ PRZEZ ZERO!")
+    else:
+        print(f"Wynik wynosi ", a / b)
